@@ -47,6 +47,30 @@ main {
   padding: 5rem 2rem 6rem;
 }
 
+.hero {
+  margin-bottom: 4rem;
+}
+
+.hero-inner {
+  display: flex;
+  align-items: flex-start;
+  gap: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.profile-photo {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  margin-top: 0.5rem;
+}
+
+.hero-text {
+  flex: 1;
+}
+
 .hero h1 {
   font-size: 2.6rem;
   font-weight: 600;
@@ -96,6 +120,7 @@ h2 {
   font-size: 1.5rem;
   font-weight: 600;
   margin-bottom: 2rem;
+  margin-top: 3rem;
   padding-bottom: 0.75rem;
   border-bottom: 1px solid #e8e8e8;
 }
@@ -193,4 +218,59 @@ footer {
   font-size: 0.8rem;
   color: #aaa;
   border-top: 1px solid #f0f0f0;
+}
+
+@media (max-width: 600px) {
+
+  nav {
+    padding: 1rem 1.5rem;
+    gap: 1.25rem;
+    flex-wrap: wrap;
+  }
+
+  nav .site-name {
+    width: 100%;
+    margin-bottom: 0.25rem;
+  }
+
+  main {
+    padding: 3rem 1.25rem 4rem;
+  }
+
+  .hero-inner {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .profile-photo {
+    width: 110px;
+    height: 110px;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero .role {
+    font-size: 1rem;
+  }
+
+  .btn-group {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn {
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+
 }
