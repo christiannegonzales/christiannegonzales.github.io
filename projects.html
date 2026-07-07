@@ -20,11 +20,19 @@
 <main>
   <h2>Projects</h2>
 
-  <!-- Sector 1 -->
-  <div class="sector">
-    <h3 class="sector-title">Economic Evaluation &amp; HTA</h3>
+  <div class="filter-bar">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="economic-evaluation">Economic Evaluation</button>
+    <button class="filter-btn" data-filter="hta">HTA</button>
+    <button class="filter-btn" data-filter="health-policy">Health Policy</button>
+    <button class="filter-btn" data-filter="market-access">Market Access</button>
+    <button class="filter-btn" data-filter="advocacy">Advocacy &amp; Policy</button>
+    <button class="filter-btn" data-filter="beyond-work">Beyond Work</button>
+  </div>
 
-    <details class="project-accordion">
+  <div class="projects-list">
+
+    <details class="project-accordion" data-category="economic-evaluation">
       <summary>
         <div class="accordion-header">
           <span class="accordion-title">Cost-Utility Analysis of Treatment Strategies in Metastatic Castration-Resistant Prostate Cancer in Sweden</span>
@@ -41,18 +49,17 @@
           <span class="tag">TLV Framework</span>
         </div>
         <p>
-          A cost-utility analysis of treatment strategies in first-line mCRPC from a Swedish
-          healthcare perspective, using patient-level data from a randomised platform trial.
-          The analysis compared androgen receptor pathway inhibitors against taxanes and
-          physician's choice, using a three-state partitioned survival model built in R and
-          conducted in adherence to TLV methodological guidelines. To the best of my
-          knowledge, this is among the first analyses of this kind conducted using
-          patient-level trial data in the Swedish reimbursement context.
+          Independently developed and executed a cost-utility analysis of first-line treatment
+          strategies in mCRPC from a Swedish healthcare perspective — among the first of its
+          kind using patient-level trial data in the Swedish reimbursement context. Built a
+          three-state partitioned survival model in R to compare androgen receptor pathway
+          inhibitors against taxanes and physician's choice, adhering to TLV methodological
+          guidelines throughout.
         </p>
       </div>
     </details>
 
-    <details class="project-accordion">
+    <details class="project-accordion" data-category="economic-evaluation">
       <summary>
         <div class="accordion-header">
           <span class="accordion-title">Economic Burden and Cost-Effectiveness of CKD Management in the Philippines</span>
@@ -68,12 +75,11 @@
           <span class="tag">Insurance Coverage</span>
         </div>
         <p>
-          Two peer-reviewed studies examining the economic dimensions of chronic kidney
-          disease in the Philippine health system. The cost-of-illness study quantified
-          direct and indirect costs across disease stages using insurance claims analysis.
-          The cost-effectiveness study evaluated empagliflozin for CKD, adapting a global
-          model to the Philippine payer context and generating an ICER relevant to
-          PhilHealth reimbursement decisions.
+          Co-authored two peer-reviewed publications in the Journal of Medical Economics on
+          the economic burden of CKD in the Philippines. Quantified direct and indirect costs
+          across disease stages from insurance claims data, and adapted a global
+          cost-effectiveness model for empagliflozin to the PhilHealth reimbursement context,
+          generating ICERs to directly inform national coverage decisions.
         </p>
         <a class="project-link" href="https://doi.org/10.1080/13696998.2025.2602361" target="_blank">Cost-effectiveness analysis of empagliflozin for CKD →</a>
         <br>
@@ -81,13 +87,8 @@
         <p class="project-meta" style="margin-top:0.5rem;">2nd most viewed article in the <em>Journal of Medical Economics</em> in 2025</p>
       </div>
     </details>
-  </div>
 
-  <!-- Sector 2 -->
-  <div class="sector">
-    <h3 class="sector-title">HTA &amp; Market Access</h3>
-
-    <details class="project-accordion">
+    <details class="project-accordion" data-category="hta market-access">
       <summary>
         <div class="accordion-header">
           <span class="accordion-title">Real-World Evidence in ATMP HTA Submissions: A Cross-HTA Landscape Analysis for JCA Readiness</span>
@@ -107,20 +108,37 @@
           <span class="tag">G-BA</span>
         </div>
         <p>
-          The EU HTA Regulation introduced Joint Clinical Assessments (JCA) as a mandatory EU-level review of new medicines, with Advanced Therapy Medicinal Products (ATMPs) among the first categories in scope. ATMPs present a distinctive evidentiary challenge: small populations, single arm trials, and no active comparator mean real world evidence is increasingly expected to fill submission gaps, but what national HTA bodies have actually accepted has not been systematically mapped.
+          The EU HTA Regulation mandates Joint Clinical Assessments (JCA) for new medicines, with ATMPs among the first categories in scope. ATMPs face a distinct evidentiary challenge: small trial populations, single-arm designs, and absent comparators mean real-world evidence is increasingly expected to fill submission gaps — yet what national HTA bodies have accepted in practice remains unmapped.
         </p>
         <p>
-          This project, pursued independently out of interest in the intersection of RWE, HTA methods, and EU market access, examines publicly available ATMP assessment documents from TLV (Sweden) and G-BA (Germany) to identify where they diverge and what JCA will require. The approach combines a structured RWE classification framework with prompt engineering, extracting dual layer outputs that retain original language passages alongside AI generated classifications for auditability. Findings are mapped against JCA PICO requirements to produce a prospective framework guiding RWE strategy for ATMPs entering the JCA pipeline.
+          This independent project examines ATMP assessment documents from TLV (Sweden) and G-BA (Germany) to identify cross-HTA divergences and define what JCA will demand. Using a structured RWE classification framework combined with prompt engineering, it extracts dual-layer outputs that preserve original language alongside AI-generated classifications for auditability. Findings are mapped against JCA PICO requirements to produce a prospective framework for RWE strategy for ATMPs entering the JCA pipeline.
         </p>
       </div>
     </details>
-  </div>
 
-  <!-- Sector 3 -->
-  <div class="sector">
-    <h3 class="sector-title">Health Policy &amp; Coverage Design</h3>
+    <details class="project-accordion" data-category="hta">
+      <summary>
+        <div class="accordion-header">
+          <span class="accordion-title">HTA Methods Guide for Preventive and Promotive Health Technologies: Data Collection and Protocol Support</span>
+          <span class="accordion-meta">Research Assistant · AIHO / DOH-HTAD · Dec 2024 – Jan 2025</span>
+        </div>
+        <span class="accordion-chevron">&#x25BE;</span>
+      </summary>
+      <div class="accordion-body">
+        <div class="tag-row">
+          <span class="tag">HTA Methods</span>
+          <span class="tag">Preventive Health</span>
+          <span class="tag">Data Collection</span>
+          <span class="tag">Philippines</span>
+          <span class="tag">DOH-HTAD</span>
+        </div>
+        <p>
+          AIHO was subcontracted by the Philippine DOH Health Technology Assessment Division to develop a national Methods Guide for the HTA of preventive and promotive health technologies — a priority initiative for institutionalising HTA practice in the Philippine health system. Conducted stakeholder interviews under Workstream 1 and contributed to drafting the project protocol and key deliverable documents.
+        </p>
+      </div>
+    </details>
 
-    <details class="project-accordion">
+    <details class="project-accordion" data-category="health-policy">
       <summary>
         <div class="accordion-header">
           <span class="accordion-title">Benefit Package Design for Acute Cardiac Care: Costing Analysis for PhilHealth STEMI Coverage</span>
@@ -136,21 +154,24 @@
           <span class="tag">National Insurance</span>
         </div>
         <p>
-          Constructing cost evidence to support the design of a bundled, episode-based
-          reimbursement package for ST-elevation myocardial infarction within the Philippine
-          national insurance system. The work involved building unit cost datasets from
-          insurance claims and provider data and coordinating provider network consultations
-          across three regions.
+          AIHO is a Philippine nonprofit providing health research, consulting, and policy support toward universal health coverage.
+        </p>
+        <p>
+          Built the cost evidence base for a national bundled reimbursement package for STEMI
+          under PhilHealth, directly contributing to the expansion of acute cardiac care
+          coverage for Filipino patients. Constructed unit cost datasets from insurance claims
+          and provider records, and coordinated hospital network consultations across three
+          regions.
         </p>
         <a class="project-link" href="https://www.pchrd.dost.gov.ph/news_and_updates/philhealth-expands-access-new-benefit-packages-covering-services-for-physical-medicine-rehabilitation-and-assistive-mobility-devices-and-heart-attack-now-available/" target="_blank">PhilHealth benefit package announcement →</a>
       </div>
     </details>
 
-    <details class="project-accordion">
+    <details class="project-accordion" data-category="health-policy">
       <summary>
         <div class="accordion-header">
           <span class="accordion-title">Expanding Insurance Coverage for Childhood Cancers: Evidence Synthesis for WHO-WPRO Priority-Setting</span>
-          <span class="accordion-meta">Evidence Synthesis · WHO Western Pacific Regional Office · 2022</span>
+          <span class="accordion-meta">Evidence Synthesis · Physicians for Peace Philippines / WHO-WPRO · 2022</span>
         </div>
         <span class="accordion-chevron">&#x25BE;</span>
       </summary>
@@ -162,16 +183,19 @@
           <span class="tag">UHC</span>
         </div>
         <p>
-          Supporting the WHO Western Pacific Regional Office in expanding national insurance
-          coverage for childhood cancers. The work synthesised clinical practice guidelines,
-          drafted standards of care for selected paediatric cancer types, and coordinated
-          validation meetings with professional medical societies, framing eligibility
-          thresholds around both clinical priority and system-level feasibility.
+          Physicians for Peace Philippines is an NGO delivering healthcare services and health systems support across underserved communities in the Philippines. This project was carried out as a subcontract under Physicians for Peace in support of WHO-WPRO, the United Nations health agency for the Western Pacific region.
+        </p>
+        <p>
+          Generated the clinical evidence base to support WHO-WPRO in driving national
+          insurance coverage of childhood cancers across the Western Pacific. Synthesised
+          clinical practice guidelines and drafted standards of care for selected paediatric
+          cancer types. Facilitated expert validation with professional medical societies,
+          translating clinical evidence into actionable coverage eligibility thresholds.
         </p>
       </div>
     </details>
 
-    <details class="project-accordion">
+    <details class="project-accordion" data-category="health-policy">
       <summary>
         <div class="accordion-header">
           <span class="accordion-title">Costing Analysis for Essential Service Package Design: Rheumatologic Conditions in the Philippines</span>
@@ -187,16 +211,19 @@
           <span class="tag">Essential Services</span>
         </div>
         <p>
-          Built a cost library covering six rheumatologic conditions to support the development
-          of essential service packages for the Philippine health system. The work involved
-          identifying, collecting, and structuring cost inputs across disease categories to
-          inform capacity assessment and package design, contributing to the evidence base for
-          expanding coverage of rheumatologic care at the national level.
+          Physicians for Peace Philippines is an NGO delivering healthcare services to underserved communities and strengthening health system sustainability across the Philippines.
+        </p>
+        <p>
+          Built a structured cost library across six rheumatologic conditions to directly
+          inform essential service package design for the Philippine health system.
+          Standardised cost inputs across disease categories to support national coverage
+          expansion decisions, contributing to the evidence base for including rheumatologic
+          care in PhilHealth benefit packages.
         </p>
       </div>
     </details>
 
-    <details class="project-accordion">
+    <details class="project-accordion" data-category="health-policy">
       <summary>
         <div class="accordion-header">
           <span class="accordion-title">Sexual and Reproductive Health Rights Research for Children with Disabilities</span>
@@ -212,23 +239,19 @@
           <span class="tag">Technical Writing</span>
         </div>
         <p>
-          Supported a baseline and inventory study on sexual and reproductive health rights
-          for children with disabilities in the Philippines. Work included key informant
-          interviews, focus group discussions, literature review, and policy document review.
-          Also produced a technical report on partner organisations' responses to the
-          COVID-19 pandemic, coordinating inputs from 20 organisations across the country.
-          The role combined primary data collection with synthesis and technical writing for
-          civil society and development audiences.
+          NORFIL Foundation is a Philippine nonprofit focused on the care and rehabilitation of vulnerable children and youth with disabilities, operating since 1984.
+        </p>
+        <p>
+          Contributed to a national baseline study on the sexual and reproductive health
+          rights of children with disabilities in the Philippines, conducting primary data
+          collection through key informant interviews and focus group discussions.
+          Independently produced a national COVID-19 response report, coordinating and
+          synthesising inputs from 20 partner organisations across the country.
         </p>
       </div>
     </details>
-  </div>
 
-  <!-- Sector 3 -->
-  <div class="sector">
-    <h3 class="sector-title">Market Access</h3>
-
-    <details class="project-accordion">
+    <details class="project-accordion" data-category="market-access">
       <summary>
         <div class="accordion-header">
           <span class="accordion-title">Patient Access Programme Design for Oncology Therapies: Pricing and Operational Considerations in APAC</span>
@@ -244,22 +267,20 @@
           <span class="tag">Oncology</span>
         </div>
         <p>
-          Contributing to the design and operational launch of two AstraZeneca oncology patient access
-          programmes across approximately 50 hospitals and 500 patients in the Philippines,
-          including income-tiered co-pay structure design, programme uptake tracking, SOP
-          development, and coordination with multi-country APAC teams.
+          Axios International is a global healthcare access company specializing in patient access programmes across emerging markets, operating in over 100 countries.
+        </p>
+        <p>
+          Designed and operationalised two AstraZeneca oncology patient access programmes
+          spanning approximately 50 hospitals and 500 patients in the Philippines. Developed
+          income-tiered co-pay structures, built programme SOPs, monitored enrolment and
+          uptake, and served as the primary operational point of contact across
+          multi-country APAC teams.
         </p>
         <a class="project-link" href="https://www.linkedin.com/posts/thanika-c-918b3983_patientassistanceprogram-healthcarecollaboration-activity-7075421015928946688-Dohw/" target="_blank">Related post: AstraZeneca Patient Access Programme launch in the Philippines →</a>
       </div>
     </details>
-  </div>
 
-
-  <!-- Sector 4 -->
-  <div class="sector">
-    <h3 class="sector-title">Advocacy &amp; Policy</h3>
-
-    <details class="project-accordion">
+    <details class="project-accordion" data-category="advocacy">
       <summary>
         <div class="accordion-header">
           <span class="accordion-title">Pharmacists and Universal Health Coverage: Research on Roles Across Asian Health Systems</span>
@@ -275,17 +296,18 @@
           <span class="tag">Advocacy</span>
         </div>
         <p>
-          Conducting research on the contribution of pharmacists to Universal Health Coverage
-          in Asian health systems, examining their roles in service delivery, access to
-          medicines, and continuity of care. The work sits within FAPA's broader policy
-          agenda and is intended to inform regional advocacy on the integration of pharmacy
-          services into health system strengthening efforts. Also provided secretariat support
-          for the 27th FAPA Congress in Taipei (3,000+ attendees, 24 countries).
+          Conducting research on pharmacists' contribution to Universal Health Coverage across
+          Asian health systems, examining roles in service delivery, access to medicines, and
+          health system strengthening. Work feeds directly into FAPA's regional advocacy
+          agenda on integrating pharmacy services into UHC frameworks. Served as secretariat
+          for the 27th FAPA Congress in Taipei, managing programme logistics across 3,000+
+          attendees from 24 countries.
         </p>
+        <a class="project-link" href="https://www.fapa.asia/en/about/our-team/69d4771aba0f4bfc1167889e?itemId=69d4772a7f5b1a0004ee1650" target="_blank">View FAPA profile →</a>
       </div>
     </details>
 
-    <details class="project-accordion">
+    <details class="project-accordion" data-category="advocacy">
       <summary>
         <div class="accordion-header">
           <span class="accordion-title">Improving Access to Safe and Quality Essential Medicines and Medical Devices: The Role of Pharmacy</span>
@@ -301,21 +323,16 @@
           <span class="tag">Editorial</span>
         </div>
         <p>
-          Co-editor of FIP's 2024 policy publication on improving access to safe and quality
-          essential medicines and medical devices, produced for an international audience of
-          pharmacy professionals and policymakers. The publication was developed through
-          collaboration with pharmacy leaders and policy experts worldwide, and reflects FIP's
-          ongoing work on access and quality within global health systems.
+          Co-edited a flagship FIP policy publication on access to essential medicines and
+          medical devices, reaching an international audience of pharmacy professionals and
+          policymakers. Coordinated and synthesised contributions from pharmacy leaders and
+          policy experts across multiple countries into a publication-ready document.
         </p>
+        <a class="project-link" href="https://www.fip.org/file/6036" target="_blank">Access the publication →</a>
       </div>
     </details>
-  </div>
 
-  <!-- Beyond Work -->
-  <div class="sector">
-    <h3 class="sector-title">Beyond Work</h3>
-
-    <details class="project-accordion">
+    <details class="project-accordion" data-category="beyond-work">
       <summary>
         <div class="accordion-header">
           <span class="accordion-title">Baking</span>
@@ -324,15 +341,15 @@
       </summary>
       <div class="accordion-body">
         <p>
-          Bread, pastries, and the occasional layer cake — a quiet constant throughout
-          most of my adult life. Living in Stockholm has introduced rye, cardamom, and
-          Scandinavian restraint alongside the flavours I grew up with in the Philippines.
+          Started as a pandemic hobby and never really stopped. Pandesal, ensaymada, the
+          occasional layer cake. It became a way to decompress and also to keep the family
+          fed, which honestly works out for everyone.
         </p>
         <a class="project-link" href="https://www.instagram.com/nasam.eat" target="_blank">@nasam.eat on Instagram →</a>
       </div>
     </details>
 
-    <details class="project-accordion">
+    <details class="project-accordion" data-category="beyond-work">
       <summary>
         <div class="accordion-header">
           <span class="accordion-title">Amateur Digital Photography</span>
@@ -341,19 +358,36 @@
       </summary>
       <div class="accordion-body">
         <p>
-          Street scenes, light, and ordinary details of places I pass through. No formal
-          training — just curiosity and a camera I have been learning to use slowly.
+          Mostly travel shots on a digicam or film camera. Places I've been, things I
+          didn't want to forget. Nothing serious, just a habit of pointing a camera at
+          whatever catches my eye.
         </p>
         <a class="project-link" href="https://www.instagram.com/christi.annex" target="_blank">@christi.annex on Instagram →</a>
       </div>
     </details>
-  </div>
 
+  </div>
 </main>
 
 <footer>
   Christianne Jade Gonzales &nbsp;·&nbsp; Stockholm, Sweden &nbsp;·&nbsp; 2026
 </footer>
+
+<script>
+  const buttons = document.querySelectorAll('.filter-btn');
+  const projects = document.querySelectorAll('.project-accordion');
+
+  buttons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      buttons.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const filter = btn.dataset.filter;
+      projects.forEach(p => {
+        p.style.display = (filter === 'all' || p.dataset.category.split(' ').includes(filter)) ? '' : 'none';
+      });
+    });
+  });
+</script>
 
 </body>
 </html>
