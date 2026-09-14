@@ -217,6 +217,80 @@ p {
   border-bottom: none;
 }
 
+/* Thumbnails on cards */
+.card-thumbnail {
+  width: 100%;
+  max-width: 320px;
+  height: 180px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 6px;
+  border: 1px solid #e4eeee;
+  margin-bottom: 1rem;
+  display: block;
+  transition: opacity 0.15s, border-color 0.15s;
+}
+
+.card-thumbnail-link {
+  display: inline-block;
+}
+
+.card-thumbnail-link:hover .card-thumbnail,
+a:hover > .experience-thumb {
+  opacity: 0.85;
+  border-color: #2a7a7a;
+}
+
+/* Work Experience compact list */
+.experience-item {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.experience-item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.experience-thumb {
+  width: 72px;
+  height: 72px;
+  object-fit: cover;
+  border-radius: 6px;
+  flex-shrink: 0;
+  border: 1px solid #e4eeee;
+  transition: opacity 0.15s, border-color 0.15s;
+  display: block;
+}
+
+.experience-body {
+  flex: 1;
+}
+
+.experience-role {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #1a1a1a;
+  margin-bottom: 0.1rem;
+}
+
+.experience-meta {
+  font-size: 0.8rem;
+  color: #888;
+  margin-bottom: 0.35rem;
+}
+
+.experience-desc {
+  font-size: 0.88rem;
+  color: #444;
+  margin-bottom: 0;
+}
+
 .tool-badges {
   display: flex;
   flex-wrap: wrap;
@@ -620,6 +694,11 @@ footer {
 
   .project-accordion summary {
     padding: 0.85rem 0.5rem;
+  }
+
+  .experience-thumb {
+    width: 56px;
+    height: 56px;
   }
 
 }
